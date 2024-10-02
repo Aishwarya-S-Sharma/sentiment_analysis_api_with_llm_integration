@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis Results</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <script>
+        // Function to hide individual and batch results after different durations
+        function hideResult() {
+            // Select individual and batch results using appropriate classes and IDs
+            const individualResult = document.getElementById('individualResult'); // Individual result
+            const batchResults = document.querySelectorAll('.batch-result'); // Batch results have the class 'batch-result'
+            const batchHeader = document.getElementById('batchHeader'); // Batch header element
+            const downloadLink = document.getElementById('downloadLink'); // Download link element
+
+            // Define the hide times for individual and batch results
+            const individualHideTime = 5000; // Time to hide individual result (5 seconds)
+            const batchHideTime = 30000; // Time to hide batch results (30 seconds)
+
+            // Hide individual result after 5 seconds
+            if (individualResult) {
+                setTimeout(() => {
+                    individualResult.style.display = 'none';
+                }, individualHideTime);
+            }
+
+            // Hide each batch result after 30 seconds
+            if (batchResults.length > 0) {
+                batchResults.forEach(resultDiv => {
+                    setTimeout(() => {
+                        resultDiv.style.display = 'none';
+                    }, batchHideTime);
+                });
+            }
+
+            // Hide batch header after 30 seconds (only if there are batch results)
+            if (batchHeader && batchResults.length > 0) {
+                setTimeout(() => {
+                    batchHeader.style.display = 'none';
+                }, batchHideTime);
+            }
+
+            // Hide download link after 30 seconds
+            if (downloadLink) {
+                setTimeout(() => {
+                    downloadLink.style.display = 'none';
+                }, batchHideTime);
+            }
+        }
+
+        // Function to clear previous results from localStorage
+        function clearPreviousResults() {
+            localStorage.removeItem('resultsDisplayed'); // Clear the flag in local storage
+        }
+
+        window.onload = function() {
+            clearPreviousResults(); // Clear previous results on page load
+            hideResult(); // Call hideResult to set up hiding after the specified times
+        };
+    </script>
+</head>
+<body>
+    <div class="min-h-screen bg-gray-100 flex items-center justify-center">
+        <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
+            <h1 class="text-3xl font-bold text-indigo-700 text-center mb-6">
+                Sentiment Analysis API With LLM Integration
+            </h1>
+
+            <form action="" method="post" enctype="multipart/form-data" class="space-y-4">
+                <input type="text" name="content" class="w-full px-4 py-2 font-semibold text-indigo-700 border border-indigo-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Enter the text to analyze" required>
+                <button type="submit" class="w-full py-2 px-4 text-white font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-700">Analyze the sentiment</button>
+            </form>
+
+            <form action="" method="post" enctype="multipart/form-data" class="space-y-4 mt-6">
+                <input type="file" name="file" accept=".csv, .xlsx" class="w-full border border-indigo-300 rounded-lg">
+                <button type="submit" class="w-full py-2 px-4 text-white font-semibold rounded-lg bg-indigo-600 hover:bg-indigo-700">Upload and Analyze</button>
+            </form>
+
+            <!-- Display individual text analysis result if it exists -->
+            {% if sentiment_result %}
+            <div id="individualResult" class="card mt-4 p-4 bg-white rounded-lg shadow-md">
+                <h4 class="font-bold text-indigo-700">Individual Sentiment Analysis Result:</h4>
+                <p class="text-indigo-700"><strong>Review: {{ review_entered }}</strong> </p>
+                <p class="text-indigo-700"><strong>Positive Score: {{ sentiment_result.positive }}</strong> </p>
+                <p class="text-indigo-700"><strong>Negative Score: {{ sentiment_result.negative }}</strong> </p>
+                <p class="text-indigo-700"><strong>Neutral Score: {{ sentiment_result.neutral }}</strong> </p>
+                <p class="text-indigo-700"><strong>Classification: {{ sentiment_classification }}</strong></p>
+            </div>
+            {% endif %}
+
+            <!-- Display batch results if they exist -->
+            {% if batch_results %}
+            <div class="mt-4">
+                <h4 id="batchHeader" class="font-bold text-indigo-700">Batch Sentiment Analysis Results:</h4>
+                {% for item in batch_results %}
+                    <div class="batch-result card mt-4 p-4 bg-white rounded-lg shadow-md">
+                        <p class="text-indigo-700"><strong>Review: {{ item.review }}</strong></p>
+                        <p class="text-indigo-700"><strong>Positive Score: {{ item.result.positive }}</strong></p>
+                        <p class="text-indigo-700"><strong>Negative Score: {{ item.result.negative }}</strong></p>
+                        <p class="text-indigo-700"><strong>Neutral Score: {{ item.result.neutral }}</strong></p>
+                        <p class="text-indigo-700"><strong>Classification: {{ item.classification }}</strong></p>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <!-- Download Link -->
+            <div id="downloadLink" class="mt-4">
+                <a href="/download" class="mt-4 inline-block bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700">Download the results</a>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
