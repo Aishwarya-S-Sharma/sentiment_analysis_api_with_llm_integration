@@ -1,51 +1,51 @@
 review,result,classification
-"Great product, very useful!","{'positive': 0.833, 'negative': 0.0, 'neutral': 0.167}",Positive
-Poor quality and bad customer service.😡,"{'positive': 0.0, 'negative': 1.0, 'neutral': 0.0}",Negative
+"Great product, very useful!","{'positive': 0.9, 'negative': 0.01, 'neutral': 0.09}",Positive
+Poor quality and bad customer service.😡,"{'positive': 0, 'negative': 2, 'neutral': 0}",Negative
 "Average performance, nothing special.","{'positive': 0.2, 'negative': 0.6, 'neutral': 0.2}",Negative
-"Exceeded my expectations, fantastic!","{'positive': 0.9, 'negative': 0.0, 'neutral': 0.1}",Positive
+"Exceeded my expectations, fantastic!","{'positive': 0.9, 'negative': 0, 'neutral': 0.1}",Positive
 "Terrible, not worth the money.😞","{'positive': 0.0, 'negative': 1.0, 'neutral': 0.0}",Negative
-"Quite good, but could be improved.","{'positive': 0.5, 'negative': 0.3, 'neutral': 0.2}",Positive
+"Quite good, but could be improved.","{'positive': 0.4, 'negative': 0.4, 'neutral': 0.2}",Neutral
 "Mediocre at best, not recommended.","{'positive': 0, 'negative': 2, 'neutral': 0}",Negative
-"Wonderful design, highly recommended!","{'positive': 0.9, 'negative': 0.01, 'neutral': 0.09}",Positive
+"Wonderful design, highly recommended!","{'positive': 0.9, 'negative': 0.0, 'neutral': 0.1}",Positive
 "Awful experience, would not buy again.","{'positive': 0, 'negative': 2, 'neutral': 0}",Negative
 "Solid product, good value for the price.","{'positive': 0.8, 'negative': 0.0, 'neutral': 0.2}",Positive
-Highly satisfied with the purchase.,"{'positive': 0.9, 'negative': 0.01, 'neutral': 0.09}",Positive
-The product broke after a few uses.,"{'positive': 0.0, 'negative': 1.0, 'neutral': 0.0}",Negative
+Highly satisfied with the purchase.,"{'positive': 0.9, 'negative': 0.0, 'neutral': 0.1}",Positive
+The product broke after a few uses.,"{'positive': 0, 'negative': 1, 'neutral': 0}",Negative
 I would definitely buy this again!😄,"{'positive': 0.9, 'negative': 0.0, 'neutral': 0.1}",Positive
-"Not as described, very disappointed.","{'positive': 0.0, 'negative': 2.0, 'neutral': 0.0}",Negative
+"Not as described, very disappointed.","{'positive': 0.0, 'negative': 1.0, 'neutral': 0.0}",Negative
 Customer service was really helpful.,"{'positive': 0.8, 'negative': 0.0, 'neutral': 0.2}",Positive
-It works perfectly as expected.,"{'positive': 0.8, 'negative': 0.0, 'neutral': 0.2}",Positive
+It works perfectly as expected.,"{'positive': 0.9, 'negative': 0.0, 'neutral': 0.1}",Positive
 I had a terrible experience with this.,"{'positive': 0.0, 'negative': 1.0, 'neutral': 0.0}",Negative
-Well worth the money.,"{'positive': 0.9, 'negative': 0.0, 'neutral': 0.1}",Positive
+Well worth the money.,"{'positive': 0.8, 'negative': 0.0, 'neutral': 0.2}",Positive
 Waste of time and money.,"{'positive': 0, 'negative': 2, 'neutral': 0}",Negative
-Absolutely love this product!,"{'positive': 0.9, 'negative': 0.01, 'neutral': 0.09}",Positive
-It didn’t work as advertised.,"{'positive': 0.0, 'negative': 0.8, 'neutral': 0.2}",Negative
-Very reliable and easy to use.,"{'positive': 0.9, 'negative': 0.01, 'neutral': 0.09}",Positive
+Absolutely love this product!,"{'positive': 0.99, 'negative': 0.01, 'neutral': 0.0}",Positive
+It didn’t work as advertised.,"{'positive': 0, 'negative': 1, 'neutral': 0}",Negative
+Very reliable and easy to use.,"{'positive': 0.8, 'negative': 0, 'neutral': 0.2}",Positive
 "I had higher expectations, sadly disappointed.","{'positive': 0.0, 'negative': 0.8, 'neutral': 0.2}",Negative
-"Delivered quickly, works as intended.","{'positive': 0.8, 'negative': 0.0, 'neutral': 0.2}",Positive
+"Delivered quickly, works as intended.","{'positive': 0.8, 'negative': 0, 'neutral': 0.2}",Positive
 "Horrible quality, won’t buy again.","{'positive': 0, 'negative': 2, 'neutral': 0}",Negative
-This is the best purchase I’ve made.,"{'positive': 0.9, 'negative': 0.01, 'neutral': 0.09}",Positive
-It stopped working after a month.,"{'positive': 0.0, 'negative': 0.8, 'neutral': 0.2}",Negative
+This is the best purchase I’ve made.,"{'positive': 1.0, 'negative': 0.0, 'neutral': 0.0}",Positive
+It stopped working after a month.,"{'positive': 0.0, 'negative': 1.0, 'neutral': 0.0}",Negative
 I’m quite pleased with this product.,"{'positive': 0.8, 'negative': 0.0, 'neutral': 0.2}",Positive
 "Very cheap material, not durable.","{'positive': 0.0, 'negative': 0.8, 'neutral': 0.2}",Negative
 Fantastic performance for the price.,"{'positive': 0.8, 'negative': 0.0, 'neutral': 0.2}",Positive
-Extremely frustrating experience.,"{'positive': 0, 'negative': 1, 'neutral': 0, 'sentiment': 'Negative'}",Negative
-User-friendly and well-designed.,"{'positive': 0.9, 'negative': 0.01, 'neutral': 0.09}",Positive
+Extremely frustrating experience.,"{'positive': 0.0, 'negative': 1.0, 'neutral': 0.0}",Negative
+User-friendly and well-designed.,"{'positive': 0.8, 'negative': 0.0, 'neutral': 0.2}",Positive
 Not worth the price at all.🙁,"{'positive': 0, 'negative': 1, 'neutral': 0}",Negative
-Better than expected!,"{'positive': 0.9, 'negative': 0.01, 'neutral': 0.09}",Positive
+Better than expected!,"{'positive': 0.9, 'negative': 0.0, 'neutral': 0.1}",Positive
 The instructions were very unclear.,"{'positive': 0, 'negative': 1, 'neutral': 0}",Negative
-Would definitely recommend to others.,"{'positive': 0.9, 'negative': 0.01, 'neutral': 0.09}",Positive
+Would definitely recommend to others.,"{'positive': 1.0, 'negative': 0.0, 'neutral': 0.0}",Positive
 Very underwhelming experience.,"{'positive': 0.0, 'negative': 1.0, 'neutral': 0.0}",Negative
-"Does the job, no complaints.","{'positive': 0.5, 'negative': 0, 'neutral': 0.5}",Positive
+"Does the job, no complaints.","{'positive': 0.2, 'negative': 0.0, 'neutral': 0.8}",Positive
 I regret purchasing this item.,"{'positive': 0.0, 'negative': 1.0, 'neutral': 0.0}",Negative
 Great value for money!😃,"{'positive': 0.9, 'negative': 0.0, 'neutral': 0.1}",Positive
 "Arrived damaged, very disappointed.","{'positive': 0, 'negative': 2, 'neutral': 0}",Negative
 Exceeded my expectations!,"{'positive': 1.0, 'negative': 0.0, 'neutral': 0.0}",Positive
-Not what I was hoping for.,"{'positive': 0.0, 'negative': 1.0, 'neutral': 0.0}",Negative
+Not what I was hoping for.,"{'positive': 0.0, 'negative': 0.8, 'neutral': 0.2}",Negative
 Happy with the purchase overall.,"{'positive': 0.8, 'negative': 0.0, 'neutral': 0.2}",Positive
-Total waste of money.,"{'positive': 0.0, 'negative': 1.0, 'neutral': 0.0}",Negative
-"Amazing product, highly satisfied!","{'positive': 0.9, 'negative': 0.0, 'neutral': 0.1}",Positive
+Total waste of money.,"{'positive': 0, 'negative': 2, 'neutral': 0}",Negative
+"Amazing product, highly satisfied!","{'positive': 0.9, 'negative': 0.01, 'neutral': 0.09}",Positive
 "Not durable, broke after a few uses.","{'positive': 0, 'negative': 2, 'neutral': 0}",Negative
-Fantastic design and great quality.,"{'positive': 0.9, 'negative': 0.01, 'neutral': 0.09}",Positive
-Wouldn’t recommend to others.,"{'positive': 0, 'negative': 1, 'neutral': 0}",Negative
-"Excellent value, would buy again.","{'positive': 0.9, 'negative': 0.0, 'neutral': 0.1}",Positive
+Fantastic design and great quality.,"{'positive': 0.9, 'negative': 0.0, 'neutral': 0.1}",Positive
+Wouldn’t recommend to others.,"{'positive': 0.0, 'negative': 1.0, 'neutral': 0.0}",Negative
+"Excellent value, would buy again.","{'positive': 0.9, 'negative': 0.01, 'neutral': 0.09}",Positive
